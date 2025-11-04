@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anthony – Merge the Shape</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+  <div id="game-container">
+    <header>
+      <h1>Anthony – Merge the Shape</h1>
+      <div id="controls">
+        <label for="themeToggle">Theme</label>
+        <select id="themeToggle" aria-label="Theme toggle">
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+        </select>
+        <a id="play-on-s3" href="#" style="margin-left:12px;">Play</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="splash-screen">
+        <img src="images/index.png" alt="Start image" id="splash-image" />
+        <button id="start-btn" class="btn">Start Game</button>
+      </section>
+
+      <canvas id="gameCanvas" width="480" height="640" style="display:none;"></canvas>
+    </main>
+
+    <footer>
+      <p>Use arrow keys to play. Theme can be changed above.</p>
+    </footer>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

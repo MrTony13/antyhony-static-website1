@@ -1,0 +1,21 @@
+:root{
+  --bg-dark:#111;
+  --panel-dark:#202020;
+  --text-light:#ffffff;
+  --bg-light:#ffffff;
+  --panel-light:#f3f3f3;
+  --text-dark:#111111;
+}
+html,body{height:100%;margin:0;font-family:Arial,Helvetica,sans-serif}
+body[data-theme="dark"]{background:var(--bg-dark);color:var(--text-light)}
+body[data-theme="light"]{background:var(--bg-light);color:var(--text-dark)}
+#game-container{max-width:720px;margin:0 auto;padding:20px;display:flex;flex-direction:column;min-height:100vh;box-sizing:border-box}
+header{display:flex;justify-content:space-between;align-items:center}
+h1{font-size:1.4rem;margin:0}
+#controls{display:flex;align-items:center;gap:8px}
+#splash-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;margin-top:30px}
+#splash-image{width:70%;max-width:420px;border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,0.4)}
+.btn{background:#ff5252;color:#fff;border:none;padding:12px 18px;border-radius:8px;cursor:pointer;margin-top:18px;font-size:1rem}
+canvas{display:block;margin:20px auto;border-radius:10px;background:transparent;box-shadow:0 10px 30px rgba(0,0,0,0.4);}
+footer{margin-top:auto;padding:12px 0;text-align:center;font-size:0.9rem;opacity:0.9}
+body[data-theme="light"] canvas{box-shadow:none;border:1px solid #ccc}
